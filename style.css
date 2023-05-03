@@ -1,0 +1,78 @@
+*{
+    
+   
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+.intro{
+    background-image:url("image/heart.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:100%;
+    height:1536px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+.intro_text{ 
+    font-family: 'Darumadrop One', cursive; 
+    color: white;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 250PX;
+    margin-bottom: 0px;
+    text-align:left;
+    font-size: 400%;
+   position: relative;
+   animation-duration: 3s;
+   animation-name: move, fadein, changecolor;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+   text-shadow:10px 10px 0px #221e25
+   
+   
+}
+.intro_text > a:visited{
+    color: white;
+}
+.intro_text > a:hover{
+    color: black;
+}
+
+@keyframes move{
+    from {
+      margin-left: 20%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 100%;
+    }
+  }
+  @keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+  @keyframes changecolor{
+    0%{color: #155798;}
+    30%{color: #1a7bac;}
+    50%{color: #7aaad1;}
+    80%{color: #bad7ed;}
+    100%{color: #f2efed;}
+  }
+
+
+

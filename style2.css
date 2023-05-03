@@ -1,0 +1,283 @@
+*{
+    
+   
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    padding:0;
+   
+}
+
+.audio {
+    margin-top: 30px;
+    margin-bottom: auto;
+    margin-left: 50px;
+    position: relative;
+    filter: opacity(0.6);
+}
+
+
+.content{
+    font-family: 'Dongle', sans-serif;
+    font-size: 150%;
+    background-image:url("image/blur.jpg");
+    background-size: 100%;
+    padding: 30px;
+   
+}
+
+
+
+
+
+.content .name{
+    background-color: aliceblue;
+    margin: 50px; 
+    margin-right: 250px;
+    padding: 30px;
+    border-radius: 20px;
+    filter: opacity(0.8);
+    background-clip: padding-box;
+    border: 5px dashed black;
+    box-shadow: 10px 10px 10px 0px lightgray;
+}
+.content .name > h1{
+    font-family: 'Darumadrop One', cursive; 
+   
+}
+
+.content .who{
+    background-color: azure;
+    margin: 50px; 
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    filter: opacity(0.8);
+    background-clip: padding-box;
+    border: 5px dashed black;
+    box-shadow: 10px 10px 10px 0px lightgray;
+    
+}
+.content .who > h1{
+    font-family: 'Darumadrop One', cursive; 
+}
+.content .favorite{
+    background-color: powderblue;
+    margin: 50px; 
+    margin-right: 170px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    filter: opacity(0.8);
+    background-clip: padding-box;
+    border: 5px dashed black;
+    box-shadow: 10px 10px 10px 0px lightgray;
+}
+.content .favorite > h1{
+    font-family: 'Darumadrop One', cursive; 
+}
+.content .song{
+    background-color: powderblue;
+    margin: 50px; 
+    margin-right: 170px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    filter: opacity(0.8);
+    background-clip: padding-box;
+    border: 5px dashed black;
+    box-shadow: 10px 10px 10px 0px lightgray;
+
+}
+
+.content .song >h1{
+    font-family: 'Darumadrop One', cursive; 
+}
+.content .idea{
+    background-color: #f8fcfb;
+    margin: 50px; 50px; auto; auto;
+    margin-right: 90px;
+    padding: 30px;
+    border-radius: 20px;
+    filter: opacity(0.8);
+    background-clip: padding-box;
+    border: 5px dashed black;
+    box-shadow: 10px 10px 10px 0px lightgray;
+}
+.content .idea >h1{
+    font-family: 'Darumadrop One', cursive;
+}
+
+.contact{
+    background-color: #f8fcfb;
+    margin: 50px; 50px; auto; auto;
+    margin-right: 90px;
+    padding: 30px;
+    border-radius: 20px;
+    filter: opacity(0.8);
+    background-clip: padding-box;
+    border: 5px dashed black;
+    box-shadow: 10px 10px 10px 0px lightgray;
+}
+.contact >h1{
+    font-family: 'Darumadrop One', cursive;
+}
+ .archive{
+    background-color: #f8fcfb;
+    font-family: 'Darumadrop One', cursive;
+    margin: 50px; 50px; auto; auto;
+    margin-right: 1070px;
+    padding: 30px;
+    border-radius: 20px;
+    filter: opacity(0.8);
+    background-clip: padding-box;
+    border: 5px dashed black;
+    
+}
+/* INPUT 가리기 */
+.section [id*="slide"] {display:none;}
+	
+/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+.section .slidewrap {max-width:100%;margin:0 auto;overflow:hidden;position:relative;}
+.section .slidelist {white-space:nowrap;font-size:0;}
+.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+.section .slidelist > li > a {display:block;position:relative;}
+
+/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+.section .slide-control .left {left:30px;background:url('./image/left.png') center center / 100% no-repeat;}
+.section .slide-control .right {right:30px;background:url('./image/right.png') center center / 100% no-repeat;}
+.section .slide-control [class*="control"] {display:none;}
+
+/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
+.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}
+
+/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+.section [id="slide04"]:checked ~ .slidewrap .control04 {display:block;}
+.section [id="slide05"]:checked ~ .slidewrap .control05 {display:block;}
+.section [id="slide06"]:checked ~ .slidewrap .control06 {display:block;}
+.slidelist{
+    text-align: center;
+}
+.section{
+    background-color: #acdcee;
+    
+    background-clip: padding-box;
+    border: 5px dashed black;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    
+    
+}
+.img .img2{
+    position: relative;
+    margin-left: 50px;
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+    
+}
+.img .img1{
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+}
+
+.imgg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    
+    
+}
+.imgg .img5{
+    position: relative;
+    margin-left: 50px;
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+    
+}
+.imgg .img6{
+    position: relative;
+    margin-left: 50px;
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+    
+}
+.imgg .img4{
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+}
+.imggg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.imggg .img8{
+    position: relative;
+    margin-left: 50px;
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+    
+}
+.imggg .img9{
+    position: relative;
+    margin-left: 50px;
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+    
+}
+.imggg .img7{
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+}
+.imgggg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    
+    
+}
+.imgggg .img12{
+    position: relative;
+    margin-left: 50px;
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+    
+}
+.imgggg .img11{
+    position: relative;
+    margin-left: 50px;
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+    
+}
+.imgggg .img10{
+    border: 3px dotted black;
+    box-shadow: 5px 10px 10px 0px lightgray;
+}
+.content .menu{
+    position: fixed;
+}
